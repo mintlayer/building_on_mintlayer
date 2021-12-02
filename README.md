@@ -40,45 +40,12 @@ Developers versed in Ethereum will probably feel most at home writing smart cont
 
 ## Full Interoperability with the Bitcoin ecosystem
 
-- Mintlayer supports atomic swaps with Bitcoin without the need for an intermediary.
-- Have Lightning support.
-- Trifecta of different chains: Bitcoin, LN for fast transactions. ML for Defi. All focus on their own part. Become part of a wider ecosystem.
-LN is under VERY rapid development. Horrific to keep up 
-Essentially acts as a graph - shortest graph.
-No path - backup - wallet controlled node
+Mintlayer is fully interoperable with Bitcoin and the Lightning Network. In plain terms, interoperability with Bitcoin means Mintlayer supports atomic swaps with Bitcoin without the need for an intermediary. Interoperability with the Lightining network means that tokens created on Minlayer (as well as the native MLT token, of course) can be exchanged over the Lightning Network, thus improving transaction speed and reducing pollution of the Mintlayer chain. **TODO**  this is ideal for an exchange, for example. Concrete plans?
 
-Dex -  key place where it belongs.
-One of the main issues with ethereum - Dexs clogging up blocks.
-
-Lightning: An intermediary for bitcoin - all transactions happening of Dex can happen on LN. Not clogging ML, not clogging Bitcoin. Fast, Essentially zero fees, no "junk" floating around on ML and Bitcoin chain. junk = transactions on DEXs. Avoids pushing up transaction fees on ML and bitcoin. Gas on ethereum has become a transaction fees. Was introduced with Smart contracts. Introducing gas - defined period of time. In v0.1 - not the same thing as TX fee. No distinction today.
-Bitcoin doesn't have gas becasue it doesn't have smart contracts. Script contracts, just have a transaction fee.
-ML is somewhere in the middle - murky: people are trying to avoid using the term gas. Strictly speaking, there will be gas for pp. Essentially that's because we're using ink.
-We tend to refer a normal transaction as having a transaction fee.
-We will have a free market for that transaction fee. A block creator can accept a transaction fee in any token they want.
-In Eth, need to pay transaction fee in ETH
-In bitcoin, BTC
-In ML - can pay in anything, hoping that whoever is mining that block accepts it
-
-In BTC - just the difference between the inputs and the outputs. You will get a suggested transaction fee.
-Wallet determines based on the mempool. Strictly speaking it's a user decision.
-
-ISSUE: How does the block creator know which tokens to accept. Will need some kind of lookup solution.
-
-Chainlink:
-They provide a bridge between their chain and Ethereum and their chain is an "oracle of prices". Can only do this with a token actually being traded. Data from, centralized, DEXs.
-
-Two ways to do LN integration
-1. Third pary node somewhere that ML nodes communicate with "Atomic swaps". Swap ML into lighting, TX will happend hashlocked on lightinig
-2. Full Mintlayer node will also become a LN
-
-LN - layer two designed purely for speed and to avoid pollution on the bitcoin chain.
-LN support
-Interact with LN from ML network.
-Mintlayer tokens will be able to be traded on the LN
-
-LN - quick
-BTC - holds the value
-ML - tokenization, DEXs, and smart contracts, DEfi
+In this way, the Mintlayer aims to create an a fast, scalable, secure, ecosystem for decentralized fininance, built on Bitcoin, where each technology plays the part it does best:
+- The Mintlayer chain itself is the place to mint tokens and deploy smart contracts
+- Transactions are carried out on the lightning network (**TODO** not ALL transactions...)
+- Value is stored on the Bitcoin blockchain (**TODO** Not ALL value...)
 
 ## Formidable security, privacy, and performance
 
@@ -90,21 +57,9 @@ The absence of accounts at the chain level offers privacy-related advantages. Fo
 
 Furthermore, the UTXO system also makes it relatively simple to _mix_ transactions. Mixing is a process in which multiple inputs from different sources feed into a single transaction with several outputs having different destinations. Although all inputs and outputs are stil publicly visible, it is not possible to tie any individual source address to outputs that ended up at a specific destination.
 
-From a resource management perspective, allowing multiple source and destination addresses within a single transaction improves performance and saves space on the blockchain. (**TODO** maybe elaborate).
+From a resource management perspective, allowing multiple source and destination addresses within a single transaction enables improved performance and space efficiency on the blockchain, compared to what is possible with account-based systems.
 
-- More resource conservative than account based, IF you see to it.
-Ben wants to send me MLT, Enrico MLT.
-1 input, two output's one pk, one signature
-Each entire transaction is signed
-Account based - need to have two completely separate tranasactions:
-Two inputs, two outputs, two public keys, two signatures
-
-Can have a single signature, single public key for both. Less energy to validate.
-
-Bitcoin hash:
-Need to be careful about mentioning attack prevention - not used.
-
-Key thing: by including the bitcoin block hash - makes it more expensive to attack/rewrite the chain. To attack ML you would have to attack BTC. 
+For example, suppose Alice wishes to send some tokens to both Bob and Charlie. In a UTXO-based system, we can record this as a single transaction, and thus require only one mention of Alice's signature and public key to be saved on the blockchain. In an account-based system, we would need two separate transactions (one from Alice to Bob, and another from Alice to Charlie), and therefor two mentions of Alice's signature and public key, to effect the same change in state.
 
 ### Chainscript
 
