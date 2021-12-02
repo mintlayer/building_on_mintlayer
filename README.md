@@ -108,6 +108,4 @@ Signature aggregation is a technique which dramatically reduces the space occupi
 In this way, signature aggregation enables more transactions within a block of a given size. The advantages of this are manifold. The most direct benefit is storage space saved in the long run, which in in turn improves the speed of onboarding new nodes onto the chain. Having more transactions per block also makes it easier for any given transaction to be selected for the next block, which results in lower transaction processing times, and thus lower transaction fees.
 
 ## Confidential Transactions
-Mintlayer's MLS-02 tokens will provide a way for users to exchange confidential assets.
-**TODO** Ben will write a short paragraph
-
+Mintlayer's MLS-02 tokens will provide a way for users to exchange confidential assets. MLS-02 tokens will mirror the functionality of MLS-01 tokens and can be created in a similar fashion. MLS-02 transactions are an opt-in feature when a user has the desire or there is a business need for privacy. 
