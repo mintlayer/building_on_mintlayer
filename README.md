@@ -26,6 +26,14 @@ Currently, there are three types of tokens that can be issued on Mintlayer:
 - **MLS-02**: confidential tokens, whose transactions are not publicly available on the blockchain
 - **MLS-03**: NFTs
 
+## Access Control Lists
+
+A notable feature of tokenization on Mintlayer is its support for Access Control Lists, or ACLs. ACLs are sets of rules, determined by the token creator at the time of issuance, which restrict the ways in which the token may be transferred. For example, an ACL may blacklist particular (untrusted) addresses, impose bounds on the amount of a token transferred, or enforce time locks on tokens transferred (rendering them "unspendable" for a period of time).
+
+ACLs aim to provide an out-of-the-box solution for companies building on Mintlayer who are subject to particular company policies or regularory legislation.For more information about ACLs, their capabilities, and their possible applications, see [this](https://docs.mintlayer.org/whitepaper/4-decentralized-finance-defi#4.3.-acl-rules-for-securities) section of the docs.
+
+**TODO** Ben to get example from Enrico? I'm not sure it's necessary
+
 ## WebAssembly smart contracts
 
 Decentralized applications of any complexity invariably require the use of smart contracts.
@@ -103,19 +111,3 @@ In this way, signature aggregation enables more transactions within a block of a
 Mintlayer's MLS-02 tokens will provide a way for users to exchange confidential assets.
 **TODO** Ben will write a short paragraph
 
-## Access Control List
-Wheen you issue a token, you can define a list of blacklisted, whitelisted addresses. Implement a solution for companies building on minlayer to implement regulatory restrictions. ACL - simplify regulatory compliance.
-
-**TODO** Ben to ask Enrico
-
-One of the key things:
-Banking is littered with compliance, regulations, laws.
-ACLs make it more viable for projects to onboard
-Tokenized stocks
-
-ML is regulated by the San Marino government. When we first launch, we have to be careful who we sell tokens to. KYC. Also KYC on any money we receive
-
-Whitelisted addresses:
-As part of creating a token, a whitelist (a specific type of transaction)
-
-99% people will probably never use an ACL. Most tokens would never touch them. Niche bit of technology. Eventually also for pp.
