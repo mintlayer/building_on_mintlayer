@@ -32,8 +32,6 @@ A notable feature of tokenization on Mintlayer is its support for Access Control
 
 ACLs aim to provide an out-of-the-box solution for companies building on Mintlayer who are subject to particular company policies or regularory legislation.For more information about ACLs, their capabilities, and their possible applications, see [this](https://docs.mintlayer.org/whitepaper/4-decentralized-finance-defi#4.3.-acl-rules-for-securities) section of the docs.
 
-**TODO** Ben to get example from Enrico? I'm not sure it's necessary
-
 ## WebAssembly smart contracts
 
 Decentralized applications of any complexity invariably require the use of smart contracts.
@@ -48,12 +46,9 @@ Developers versed in Ethereum will probably feel most at home writing smart cont
 
 ## Full Interoperability with the Bitcoin ecosystem
 
-Mintlayer is fully interoperable with Bitcoin and the Lightning Network. In plain terms, interoperability with Bitcoin means Mintlayer supports atomic swaps with Bitcoin without the need for an intermediary. Interoperability with the Lightining network means that tokens created on Minlayer (as well as the native MLT token, of course) can be exchanged over the Lightning Network, thus improving transaction speed and reducing pollution of the Mintlayer chain. **TODO**  this is ideal for an exchange, for example. Concrete plans?
+Mintlayer is fully interoperable with Bitcoin and the Lightning Network. In plain terms, interoperability with Bitcoin means Mintlayer supports atomic swaps with Bitcoin without the need for an intermediary. Interoperability with the Lightining network means that tokens created on Minlayer (as well as the native MLT token, of course) can be exchanged over the Lightning Network, thus improving transaction speed and reducing pollution of the Mintlayer chain. In the future, Mintlayer will implement its own [decentralized exchange](https://docs.mintlayer.org/whitepaper/5-decentralized-exchange-dex) on top of the Lightning Network.
 
-In this way, the Mintlayer aims to create an a fast, scalable, secure, ecosystem for decentralized fininance, built on Bitcoin, where each technology plays the part it does best:
-- The Mintlayer chain itself is the place to mint tokens and deploy smart contracts
-- Transactions are carried out on the lightning network (**TODO** not ALL transactions...)
-- Value is stored on the Bitcoin blockchain (**TODO** Not ALL value...)
+Thus, Mintlayer aims to create an a fast, scalable, secure, ecosystem for decentralized fininance built on Bitcoin. In this ecosystem, the Mintlayer chain will provide the mechanisms for token minting and smart contract deployment, while transaction-heavy workloads can be carried out on the Lightning Network.
 
 ## Formidable security, privacy, and performance
 
@@ -108,4 +103,4 @@ Signature aggregation is a technique which dramatically reduces the space occupi
 In this way, signature aggregation enables more transactions within a block of a given size. The advantages of this are manifold. The most direct benefit is storage space saved in the long run, which in in turn improves the speed of onboarding new nodes onto the chain. Having more transactions per block also makes it easier for any given transaction to be selected for the next block, which results in lower transaction processing times, and thus lower transaction fees.
 
 ## Confidential Transactions
-Mintlayer's MLS-02 tokens will provide a way for users to exchange confidential assets. MLS-02 tokens will mirror the functionality of MLS-01 tokens and can be created in a similar fashion. MLS-02 transactions are an opt-in feature when a user has the desire or there is a business need for privacy. 
+Mintlayer's MLS-02 tokens provide a way for users to exchange confidential assets. These tokens mirror the functionality of MLS-01 tokens, and can be created in a similar fashion. MLS-02 transactions are an opt-in feature when a user has the desire or there is a business need for privacy.
