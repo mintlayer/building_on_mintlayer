@@ -1,0 +1,17 @@
+Mintlayer will support several main ways to interact with the chain and perform "normal interactions".
+
+A web wallet, a mobile wallet, a command line interface and access through RPCs.
+
+- gen key pair
+- gen new seed
+- get key pair from seed
+- get pk from sk
+- get derived keys
+- get address from sk
+- save keys locally
+- delete keys
+- stake
+- send tx
+- check from rx
+- create token
+- sign a tx
