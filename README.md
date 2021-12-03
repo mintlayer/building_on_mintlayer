@@ -38,7 +38,7 @@ Decentralized applications of any complexity invariably require the use of smart
 
 By supporting WebAssembly smart contracts, Mintlayer empowers blockchain developers of all backgrounds to confidently build and deploy decentralized applications.
 
-Support for WebAssembly smart contracts means developers can code smart contracts in any language which compiles to WebAssembly.
+Support for WebAssembly smart contracts means developers can code smart contracts in any language which compiles to WebAssembly, assuming library support is available. We will natively support ink! from the word go and look to expand that support overtime and hopefully the community will port our libraries to languages they'd like to see supported.
 
 For example, the [*ink!*](https://github.com/paritytech/ink) framerork enables smart contract development in the Rust programming language, which has seen a meteoric rise in popularity over the past years owing to its speed, safety, and rich development ecosystem. A language supporting multiple programming paradigms, Rust strikes a balance between accessibility and ease of use on the one hand, and strong memory-safety and type-safety guarantees on the other.
 
