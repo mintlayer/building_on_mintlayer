@@ -44,7 +44,7 @@ For example, the [*ink!*](https://github.com/paritytech/ink) framerork enables s
 
 Developers versed in Ethereum will probably feel most at home writing smart contracts in Solidity. [Solang](https://github.com/hyperledger-labs/solang), a project developed by Hyperledger Labs, facilitates compiling Solidity to WebAssembly, thereby providing a way for smart contracts written in Solidity to be deployed on Mintlayer.
 
-## Full Interoperability with the Bitcoin ecosystem
+## Interoperability with the Bitcoin ecosystem
 
 Mintlayer is fully interoperable with Bitcoin and the Lightning Network. In plain terms, interoperability with Bitcoin means Mintlayer supports atomic swaps with Bitcoin without the need for an intermediary. Interoperability with the Lightining network means that tokens created on Minlayer (as well as the native MLT token, of course) can be exchanged over the Lightning Network, thus improving transaction speed and reducing pollution of the Mintlayer chain. In the future, Mintlayer will implement its own [decentralized exchange](https://docs.mintlayer.org/whitepaper/5-decentralized-exchange-dex) on top of the Lightning Network.
 
