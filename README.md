@@ -22,7 +22,7 @@ There are three ways to create your own token:
 - _Cli_: use Mintlayer's command line interface tool
 
 Currently, there are three types of tokens that can be issued on Mintlayer:
-- **MLS-01**: "normal" tokens, akin to ERC-20 tokens on Ethererum
+- **MLS-01**: "normal" fungible tokens, akin to ERC-20 tokens on Ethererum
 - **MLS-02**: confidential tokens, whose transactions are not publicly available on the blockchain
 - **MLS-03**: NFTs
 
@@ -50,7 +50,7 @@ Mintlayer is fully interoperable with Bitcoin and the Lightning Network. In plai
 
 Thus, Mintlayer aims to create an a fast, scalable, secure, ecosystem for decentralized fininance built on Bitcoin. In this ecosystem, the Mintlayer chain will provide the mechanisms for token minting and smart contract deployment, while transaction-heavy workloads can be carried out on the Lightning Network.
 
-## Formidable security, privacy, and performance
+## Security, privacy, and performance
 
 ### UTXO System 
 
