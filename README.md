@@ -1,17 +1,17 @@
 #  Blockchain developer looking to build your next project? Consider *Mintlayer*. #
 
-Mintlayer combines combines the best features of different chains in a novel way.
+Mintlayer combines the best features of different chains in a novel way.
 
 At a glance, Mintlayer offers:
 
-- Native tokenization, including NFTs and confidential tokens
+- Tokenization, including NFTs and confidential tokens
 - Support for WebAssembly smart contracts
 - Formidable security and privacy features, by virtue of its UTXO system and the Chainscript scripting language
 - Signature aggregation through BLS
 - Confidential transactions
 - Fully interoperablity with bitcoin and the lightning network
 
-## Native tokenization
+## Tokenization
 
 Mintlayer's native token, MLT, is used for staking and for paying transaction fees.
 
@@ -48,7 +48,7 @@ Developers versed in Ethereum will probably feel most at home writing smart cont
 
 Mintlayer is fully interoperable with Bitcoin and the Lightning Network. In plain terms, interoperability with Bitcoin means Mintlayer supports atomic swaps with Bitcoin without the need for an intermediary. Interoperability with the Lightining network means that tokens created on Minlayer (as well as the native MLT token, of course) can be exchanged over the Lightning Network, thus improving transaction speed and reducing pollution of the Mintlayer chain. In the future, Mintlayer will implement its own [decentralized exchange](https://docs.mintlayer.org/whitepaper/5-decentralized-exchange-dex) on top of the Lightning Network.
 
-Thus, Mintlayer aims to create an a fast, scalable, secure, ecosystem for decentralized fininance built on Bitcoin. In this ecosystem, the Mintlayer chain will provide the mechanisms for token minting and smart contract deployment, while transaction-heavy workloads can be carried out on the Lightning Network.
+Thus, Mintlayer aims to create a fast, scalable, secure, ecosystem for decentralized fininance built on Bitcoin. In this ecosystem, the Mintlayer chain will provide the mechanisms for token minting and smart contract deployment, while transaction-heavy workloads can be carried out on the Lightning Network.
 
 ## Security, privacy, and performance
 
