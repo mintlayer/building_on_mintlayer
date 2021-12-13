@@ -26,6 +26,8 @@ Currently, there are three types of tokens that can be issued on Mintlayer:
 
 Mintlayer's native token, MLT, is used primarily for staking. It can also be used to pay transaction fees, although transaction fees can be paid in any Mintlayer token that the block creator has decided to accept.
 
+To learn more about tokenization on Mintlayer, see the relevant [section of the whitepaper](https://docs.mintlayer.org/whitepaper/3-tokenization-standard).
+
 ## Access Control Lists
 
 A notable feature of tokenization on Mintlayer is its support for Access Control Lists, or ACLs. ACLs are sets of rules, determined by the token creator at the time of issuance, which restrict the ways in which the token may be transferred. For example, an ACL may blacklist particular (untrusted) addresses, impose bounds on the amount of a token transferred, or enforce time locks on tokens transferred (rendering them "unspendable" for a period of time).
