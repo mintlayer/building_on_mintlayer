@@ -4,12 +4,12 @@ Mintlayer combines the best features of different chains in a novel way.
 
 At a glance, Mintlayer offers:
 
-- Tokenization, including NFTs and confidential tokens
-- Support for WebAssembly smart contracts
-- security and privacy by virtue of its UTXO system and the Chainscript scripting language
-- Signature aggregation through BLS
+- Tokenization, including [NFTs](https://en.wikipedia.org/wiki/Non-fungible_token) and confidential tokens
+- Support for [WebAssembly](https://webassembly.org/) smart contracts
+- security and privacy by virtue of its [UTXO](https://en.wikipedia.org/wiki/Unspent_transaction_output) system and the Chainscript scripting language
+- Signature aggregation through [BLS](https://crypto.stanford.edu/~dabo/pubs/papers/aggreg.pdf)
 - Confidential transactions
-- Fully interoperablity with bitcoin and the lightning network
+- Interoperablity with [Bitcoin](https://en.wikipedia.org/wiki/Bitcoin) and the [Lightning Network](https://lightning.network/)
 
 ## Tokenization
 
@@ -17,10 +17,10 @@ Minting your own token on Mintlayer is as easy as submitting a transaction. No s
 There are three ways to create your own token:
 - _RPC_:  create a token issuance transaction and submit it to a Minlayer node via RPC
 - _Wallet_: use the graphical user interface provided by Minlayer's mobile or web wallets
-- _Cli_: use Mintlayer's command line interface tool
+- _Cli_: use Mintlayer's [command line interface tool](https://en.wikipedia.org/wiki/Command-line_interface)
 
 Currently, there are three types of tokens that can be issued on Mintlayer:
-- **MLS-01**: "normal" fungible tokens, akin to ERC-20 tokens on Ethererum
+- **MLS-01**: "normal" fungible tokens, akin to [ERC-20](https://erc20.tech/) tokens on Ethererum
 - **MLS-02**: confidential tokens, whose transactions are not publicly available on the blockchain
 - **MLS-03**: NFTs
 
@@ -34,15 +34,15 @@ ACLs aim to provide an out-of-the-box solution for companies building on Mintlay
 
 ## WebAssembly smart contracts
 
-Decentralized applications of any complexity invariably require the use of smart contracts.
+Decentralized applications of any complexity invariably require the use of [smart contracts](https://en.wikipedia.org/wiki/Smart_contract).
 
 By supporting WebAssembly smart contracts, Mintlayer empowers blockchain developers of all backgrounds to confidently build and deploy decentralized applications.
 
 Support for WebAssembly smart contracts means developers can code smart contracts in any language which compiles to WebAssembly, assuming library support is available.
 
-Mintlayer natively supports [*ink!*](https://github.com/paritytech/ink), a framerork for smart contract development in Rust. One of the fastest-growing growing programming languages in recent years, Rust's meteoric rise over the past few years owes to its speed, safety, rich development ecosystem, and avid community of developers. A language supporting multiple programming paradigms, Rust strikes a balance between accessibility and ease of use on the one hand, and strong memory-safety and type-safety guarantees on the other. Mintlayer's support for *ink!* will be expanded and refined over time, while the community ports our libraries to other languages it would like to see supported.
+Mintlayer natively supports [*ink!*](https://github.com/paritytech/ink), a framerork for smart contract development in [Rust](https://www.rust-lang.org/). One of the fastest-growing growing programming languages in recent years, Rust's meteoric rise over the past few years owes to its speed, safety, rich development ecosystem, and avid community of developers. A language supporting multiple programming paradigms, Rust strikes a balance between accessibility and ease of use on the one hand, and strong memory-safety and type-safety guarantees on the other. Mintlayer's support for *ink!* will be expanded and refined over time, while the community ports our libraries to other languages it would like to see supported.
 
-Developers versed in Ethereum will probably feel most at home writing smart contracts in Solidity. [Solang](https://github.com/hyperledger-labs/solang), a project developed by Hyperledger Labs, facilitates compiling Solidity to WebAssembly, thereby providing a way for smart contracts written in Solidity to be deployed on Mintlayer.
+Developers versed in Ethereum will probably feel most at home writing smart contracts in [Solidity](https://soliditylang.org/). [Solang](https://github.com/hyperledger-labs/solang), a project developed by Hyperledger Labs, facilitates compiling Solidity to WebAssembly, thereby providing a way for smart contracts written in Solidity to be deployed on Mintlayer.
 
 ## Interoperability with the Bitcoin ecosystem
 
@@ -66,7 +66,7 @@ For example, suppose Alice wishes to send some tokens to both Bob and Charlie. I
 
 ### Chainscript
 
-Mintlayer implements Chainscript, its own scripting language and a superset Bitcoin script. Much like Bitcoin script, Chainscript allows customization of spending conditions on funds transferred from one user to another, and can also be used for simple smart contracts.
+Mintlayer implements Chainscript, its own scripting language and a superset [Bitcoin script](https://en.bitcoin.it/wiki/Script). Much like Bitcoin script, Chainscript allows customization of spending conditions on funds transferred from one user to another, and can also be used for simple smart contracts.
 
 For example, suppose Alice wants to send Bob some money provided he is able to produce a secret password picked by Alice. Alice wants to be able to take the funds back if Bob is unable or unwilling to produce the password within 2 days. In Chainscript, these conditions are expressed by:
 
@@ -90,13 +90,13 @@ or by Alice, after two days have elapsed:
 <Alice_SIG> 0
 ```
 
-In addition to offering simplicity, Chainscript eliminates entire classes of security issues. For example, the absence of loops in Chainscript renders DoS (Denial of Service) attacks impossible.
+In addition to offering simplicity, Chainscript eliminates entire classes of security issues. For example, the absence of loops in Chainscript renders [DoS (Denial of Service)](https://en.wikipedia.org/wiki/Denial-of-service_attack) attacks impossible.
 
 Furthermore, the stack-based execution model of Chainscript ensures that the time and processing resources necessary to execute a script are proportional to the size of the script. As the maximum valid size for a script is bounded, so are the resources needed to execute it. In this way, the need for gas fees is eliminated in the case of simple (Chainscript) smart contracts.
 
 ## Signature aggregation through BLS
 
-A significant part of every transaction in a utxo system consists of the sender's signature. For example, in Bitcoin's ECDSA, the signature makes up about 1/3 of the entire transaction.
+A significant part of every transaction in a utxo system consists of the sender's signature. For example, in Bitcoin's [ECDSA](https://en.wikipedia.org/wiki/Elliptic_Curve_Digital_Signature_Algorithm), the signature makes up about 1/3 of the entire transaction.
 
 Signature aggregation is a technique which dramatically reduces the space occupied by transaction signatures on the blockchain. After a validator has selected the transactions for the next block, it uses all of the transaction signatures as input to a _signature aggregation scheme_ (in Mintlayer's case, BLS) in order to compute a single "aggregated signature" (of the same size as the individual transaction signatures). Only the aggregated signature is stored in the block, and other validators can use it to verify all transactions in that block.
 
