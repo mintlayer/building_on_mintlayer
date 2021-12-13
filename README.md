@@ -13,9 +13,7 @@ At a glance, Mintlayer offers:
 
 ## Tokenization
 
-Mintlayer's native token, MLT, is used for staking and for paying transaction fees.
-
-In addition, minting your own token on Mintlayer is as easy as submitting a transaction. No smart contract is required!
+Minting your own token on Mintlayer is as easy as submitting a transaction. No smart contract is required!
 There are three ways to create your own token:
 - _RPC_:  create a token issuance transaction and submit it to a Minlayer node via RPC
 - _Wallet_: use the graphical user interface provided by Minlayer's mobile or web wallets
@@ -25,6 +23,8 @@ Currently, there are three types of tokens that can be issued on Mintlayer:
 - **MLS-01**: "normal" fungible tokens, akin to ERC-20 tokens on Ethererum
 - **MLS-02**: confidential tokens, whose transactions are not publicly available on the blockchain
 - **MLS-03**: NFTs
+
+Mintlayer's native token, MLT, is used primarily for staking. It can also be used to pay transaction fees, although transaction fees can be paid in any Mintlayer token that the block creator has decided to accept.
 
 ## Access Control Lists
 
