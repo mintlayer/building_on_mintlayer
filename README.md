@@ -6,7 +6,7 @@ At a glance, Mintlayer offers:
 
 - Tokenization, including NFTs and confidential tokens
 - Support for WebAssembly smart contracts
-- Formidable security and privacy features, by virtue of its UTXO system and the Chainscript scripting language
+- security and privacy by virtue of its UTXO system and the Chainscript scripting language
 - Signature aggregation through BLS
 - Confidential transactions
 - Fully interoperablity with bitcoin and the lightning network
