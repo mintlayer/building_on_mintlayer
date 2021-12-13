@@ -38,9 +38,9 @@ Decentralized applications of any complexity invariably require the use of smart
 
 By supporting WebAssembly smart contracts, Mintlayer empowers blockchain developers of all backgrounds to confidently build and deploy decentralized applications.
 
-Support for WebAssembly smart contracts means developers can code smart contracts in any language which compiles to WebAssembly, assuming library support is available. We will natively support ink! from the word go and look to expand that support overtime and hopefully the community will port our libraries to languages they'd like to see supported.
+Support for WebAssembly smart contracts means developers can code smart contracts in any language which compiles to WebAssembly, assuming library support is available.
 
-For example, the [*ink!*](https://github.com/paritytech/ink) framerork enables smart contract development in the Rust programming language, which has seen a meteoric rise in popularity over the past years owing to its speed, safety, and rich development ecosystem. A language supporting multiple programming paradigms, Rust strikes a balance between accessibility and ease of use on the one hand, and strong memory-safety and type-safety guarantees on the other.
+Mintlayer natively supports [*ink!*](https://github.com/paritytech/ink), a framerork for smart contract development in Rust. One of the fastest-growing growing programming languages in recent years, Rust's meteoric rise over the past few years owes to its speed, safety, rich development ecosystem, and avid community of developers. A language supporting multiple programming paradigms, Rust strikes a balance between accessibility and ease of use on the one hand, and strong memory-safety and type-safety guarantees on the other. Mintlayer's support for *ink!* will be expanded and refined over time, while the community ports our libraries to other languages it would like to see supported.
 
 Developers versed in Ethereum will probably feel most at home writing smart contracts in Solidity. [Solang](https://github.com/hyperledger-labs/solang), a project developed by Hyperledger Labs, facilitates compiling Solidity to WebAssembly, thereby providing a way for smart contracts written in Solidity to be deployed on Mintlayer.
 
