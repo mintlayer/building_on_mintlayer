@@ -6,7 +6,7 @@ At a glance, Mintlayer offers:
 
 - Tokenization, including [NFTs](https://en.wikipedia.org/wiki/Non-fungible_token) and confidential tokens
 - Support for [WebAssembly](https://webassembly.org/) smart contracts
-- security and privacy by virtue of its [UTXO](https://en.wikipedia.org/wiki/Unspent_transaction_output) system and the Chainscript scripting language
+- security and privacy by virtue of its [UTXO](https://en.wikipedia.org/wiki/Unspent_transaction_output) system and the [Chainscript](https://docs.mintlayer.org/whitepaper/4-decentralized-finance-defi) scripting language
 - Signature aggregation through [BLS](https://crypto.stanford.edu/~dabo/pubs/papers/aggreg.pdf)
 - Confidential transactions
 - Interoperablity with [Bitcoin](https://en.wikipedia.org/wiki/Bitcoin) and the [Lightning Network](https://lightning.network/)
