@@ -6,10 +6,10 @@ At a glance, Mintlayer offers:
 
 - Tokenization, including [NFTs](https://en.wikipedia.org/wiki/Non-fungible_token) and confidential tokens
 - Support for [WebAssembly](https://webassembly.org/) smart contracts
-- security and privacy by virtue of its [UTXO](https://en.wikipedia.org/wiki/Unspent_transaction_output) system and the [Chainscript](https://docs.mintlayer.org/whitepaper/4-decentralized-finance-defi) scripting language
+- security and privacy by virtue of its [UTXO](https://en.bitcoin.it/wiki/Transaction) system and the [Chainscript](https://docs.mintlayer.org/whitepaper/4-decentralized-finance-defi) scripting language
 - Signature aggregation through [BLS](https://crypto.stanford.edu/~dabo/pubs/papers/aggreg.pdf)
 - Confidential transactions
-- Interoperablity with Bitcoin and the [Lightning Network](https://lightning.network/)
+- [Interoperablity](https://en.bitcoinwiki.org/wiki/Atomic_Swap) with Bitcoin and the [Lightning Network](https://lightning.network/)
 
 ## Tokenization
 
@@ -48,7 +48,7 @@ Developers versed in Ethereum will probably feel most at home writing smart cont
 
 ## Interoperability with the Bitcoin ecosystem
 
-Mintlayer is fully interoperable with Bitcoin and the Lightning Network. In plain terms, interoperability with Bitcoin means Mintlayer supports [atomic swaps](https://en.bitcoinwiki.org/wiki/Atomic_Swap) with Bitcoin without the need for an intermediary. Interoperability with the Lightining network means that tokens created on Minlayer (as well as the native MLT token, of course) can be exchanged over the Lightning Network, thus improving transaction speed and reducing pollution of the Mintlayer chain. In the future, Mintlayer will implement its own [decentralized exchange](https://docs.mintlayer.org/whitepaper/5-decentralized-exchange-dex) on top of the Lightning Network.
+Mintlayer is fully interoperable with Bitcoin and the Lightning Network. In plain terms, interoperability with Bitcoin means Mintlayer supports atomic swaps with Bitcoin without the need for an intermediary. Interoperability with the Lightining network means that tokens created on Minlayer (as well as the native MLT token, of course) can be exchanged over the Lightning Network, thus improving transaction speed and reducing pollution of the Mintlayer chain. In the future, Mintlayer will implement its own [decentralized exchange](https://docs.mintlayer.org/whitepaper/5-decentralized-exchange-dex) on top of the Lightning Network.
 
 Thus, Mintlayer aims to create a fast, scalable, secure, ecosystem for decentralized fininance built on Bitcoin. In this ecosystem, the Mintlayer chain will provide the mechanisms for token minting and smart contract deployment, while transaction-heavy workloads can be carried out on the Lightning Network.
 
