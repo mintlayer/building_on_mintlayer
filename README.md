@@ -6,7 +6,7 @@ At a glance, Mintlayer offers:
 
 - Tokenization, including [NFTs](https://en.wikipedia.org/wiki/Non-fungible_token) and confidential tokens
 - Support for [WebAssembly](https://webassembly.org/) smart contracts
-- security and privacy by virtue of its [UTXO](https://en.bitcoin.it/wiki/Transaction) system and the [Chainscript](https://docs.mintlayer.org/whitepaper/4-decentralized-finance-defi) scripting language
+- Security and privacy by virtue of its [UTXO](https://en.bitcoin.it/wiki/Transaction) system and the [Chainscript](https://docs.mintlayer.org/whitepaper/4-decentralized-finance-defi) scripting language
 - Signature aggregation through [BLS](https://crypto.stanford.edu/~dabo/pubs/papers/aggreg.pdf)
 - Confidential transactions
 - [Interoperablity](https://en.bitcoinwiki.org/wiki/Atomic_Swap) with Bitcoin and the [Lightning Network](https://lightning.network/)
@@ -32,7 +32,7 @@ To learn more about tokenization on Mintlayer, see the relevant [section of the 
 
 A notable feature of tokenization on Mintlayer is its support for Access Control Lists, or ACLs. ACLs are sets of rules, determined by the token creator at the time of issuance, which restrict the ways in which the token may be transferred. For example, an ACL may blacklist particular (untrusted) addresses, impose bounds on the amount of a token transferred, or enforce time locks on tokens transferred (rendering them "unspendable" for a period of time).
 
-ACLs aim to provide an out-of-the-box solution for companies building on Mintlayer who are subject to particular company policies or regularory legislation.For more information about ACLs, their capabilities, and their possible applications, see [this](https://docs.mintlayer.org/whitepaper/4-decentralized-finance-defi#4.3.-acl-rules-for-securities) section of the docs.
+ACLs aim to provide an out-of-the-box solution for companies building on Mintlayer who are subject to particular company policies or regularory legislation. For more information about ACLs, their capabilities, and their possible applications, see [this](https://docs.mintlayer.org/whitepaper/4-decentralized-finance-defi#4.3.-acl-rules-for-securities) section of the docs.
 
 ## WebAssembly smart contracts
 
@@ -50,13 +50,13 @@ Developers versed in Ethereum will probably feel most at home writing smart cont
 
 Mintlayer is fully interoperable with Bitcoin and the Lightning Network. In plain terms, interoperability with Bitcoin means Mintlayer supports atomic swaps with Bitcoin without the need for an intermediary. Interoperability with the Lightining network means that tokens created on Minlayer (as well as the native MLT token, of course) can be exchanged over the Lightning Network, thus improving transaction speed and reducing pollution of the Mintlayer chain. In the future, Mintlayer will implement its own [decentralized exchange](https://docs.mintlayer.org/whitepaper/5-decentralized-exchange-dex) on top of the Lightning Network.
 
-Thus, Mintlayer aims to create a fast, scalable, secure, ecosystem for decentralized fininance built on Bitcoin. In this ecosystem, the Mintlayer chain will provide the mechanisms for token minting and smart contract deployment, while transaction-heavy workloads can be carried out on the Lightning Network.
+Thus, Mintlayer aims to create a fast, scalable, secure, ecosystem for decentralized finance built on Bitcoin. In this ecosystem, the Mintlayer chain will provide the mechanisms for token minting and smart contract deployment, while transaction-heavy workloads can be carried out on the Lightning Network.
 
 ## Security, privacy, and performance
 
 ### UTXO System 
 
-Similarly to Bitcoin, Mintlayer uses an Unspent Transaction Output (UTXO) system for transactions. This means that there is no notion of wallet (or account) at the chain level in Mintlayer as there is on blockchains such as Ethereum, Polkadot, or Solana. Instead, the blockchain keeps a history of all transactions, where each transaction consists of a set of inputs and outputs. Every input to a transaction is the output of a previously executed transaction, and a transaction output is considered _unspent_ if it does not appear as an input in any transaction.
+Similarly to Bitcoin, Mintlayer uses an Unspent Transaction Output (UTXO) system for transactions. This means that there is no notion of an account at the chain level in Mintlayer as there is on blockchains such as Ethereum, Polkadot, or Solana. Instead, the blockchain keeps a history of all transactions, where each transaction consists of a set of inputs and outputs. Every input to a transaction is the output of a previously executed transaction, and a transaction output is considered _unspent_ if it does not appear as an input in any transaction.
 
 The absence of accounts at the chain level offers privacy-related advantages. For example, wallets can implement logic allowing an end user to generate a different destination address for each transaction, while the wallet takes care of determining the user's balance by scanning the blockchain for all unspent transaction outputs and determining which outputs belong to the user. Using a different destination address for each transaction renders it far more difficult to link transactions to a specific users.
 
@@ -98,11 +98,11 @@ Furthermore, the stack-based execution model of Chainscript ensures that the tim
 
 ## Signature aggregation through BLS
 
-A significant part of every transaction in a UTXOI system consists of the sender's signature. For example, in Bitcoin's [ECDSA](https://en.wikipedia.org/wiki/Elliptic_Curve_Digital_Signature_Algorithm), the signature makes up about 1/3 of the entire transaction.
+A significant part of every transaction in a UTXO system consists of the sender's signature. For example, in Bitcoin's [ECDSA](https://en.wikipedia.org/wiki/Elliptic_Curve_Digital_Signature_Algorithm), the signature makes up about 1/3 of the entire transaction.
 
 Signature aggregation is a technique which dramatically reduces the space occupied by transaction signatures on the blockchain. After a validator has selected the transactions for the next block, it uses all of the transaction signatures as input to a _signature aggregation scheme_ (in Mintlayer's case, BLS) in order to compute a single "aggregated signature" (of the same size as the individual transaction signatures). Only the aggregated signature is stored in the block, and other validators can use it to verify all transactions in that block.
 
-In this way, signature aggregation enables more transactions within a block of a given size. The advantages of this are manifold. The most direct benefit is storage space saved in the long run, which in in turn improves the speed of onboarding new nodes onto the chain. Having more transactions per block also makes it easier for any given transaction to be selected for the next block, which results in lower transaction processing times, and thus lower transaction fees.
+In this way, signature aggregation enables more transactions within a block of a given size. The advantages of this are manifold. The most direct benefit is storage space saved in the long run, which in turn improves the speed of onboarding new nodes onto the chain. Having more transactions per block also makes it easier for any given transaction to be selected for the next block, which results in lower transaction processing times, and thus lower transaction fees.
 
 ## Confidential Transactions
 Mintlayer's MLS-02 tokens provide a way for users to exchange confidential assets. These tokens mirror the functionality of MLS-01 tokens, and can be created in a similar fashion. MLS-02 transactions are an opt-in feature when a user has the desire or there is a business need for privacy.
